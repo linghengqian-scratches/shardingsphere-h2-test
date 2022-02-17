@@ -49,13 +49,8 @@ spring:
         data-sources:
           lingh-readwrite-data-sources:
             write-data-source-name: ds0
-            read-data-source-names:
-              - ds1
-              - ds2
-            load-balancer-name: lingh-load-balance-algorithm
-        load-balancers:
-          lingh-load-balance-algorithm:
-            type: ROUND_ROBIN
+            read-data-source-names: ds1,ds2
+            load-balancer-name: ROUND_ROBIN
 logging:
   level:
     org.apache.shardingsphere: debug
