@@ -48,8 +48,8 @@ spring:
       readwrite-splitting:
         data-sources:
           lingh-readwrite-data-sources:
+            type: Static
             props:
-              type: Static
               write-data-source-name: ds0
               read-data-source-names: ds1,ds2
             load-balancer-name: ROUND_ROBIN
