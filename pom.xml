@@ -15,7 +15,8 @@
     <description>shardingsphere-h2-test</description>
     <properties>
         <java.version>1.8</java.version>
-        <h2.version>2.1.210</h2.version>
+        <shardingsphere.version>5.1.0</shardingsphere.version>
+        <h2.version>1.4.200</h2.version>
     </properties>
     <dependencies>
         <dependency>
@@ -51,7 +52,7 @@
         <dependency>
             <groupId>org.apache.shardingsphere</groupId>
             <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
-            <version>5.0.0</version>
+            <version>${shardingsphere.version}</version>
         </dependency>
     </dependencies>
 
